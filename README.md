@@ -4,4 +4,4 @@
 
     Faire un *npm install* avant utilisation
 
-[Lien vers la documentation du projet]()
+[Lien vers la documentation du projet](https://github.com/SimonFauvre/P8/wiki)
