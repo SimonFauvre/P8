@@ -180,25 +180,25 @@
 				});
 			break;
 
-			case 'removeCompleted' : 
+			case 'removeCompleted': 
 				$on(self.$clearCompleted, 'click', function () {
 					handler();
 				});
 			break;
 
-			case 'toggleAll' :
+			case 'toggleAll':
 				$on(self.$toggleAll, 'click', function () {
 					handler({completed: this.checked});
 				});
 			break;
 
-			case 'itemEdit' :
+			case 'itemEdit':
 				$delegate(self.$todoList, 'li label', 'dblclick', function () {
 					handler({id: self._itemId(this)});
 				});
 			break;
 
-			case 'itemToggle' :
+			case 'itemToggle':
 				$delegate(self.$todoList, '.toggle', 'click', function () {
 					handler({
 						id: self._itemId(this),
@@ -211,8 +211,9 @@
 				self._bindItemEditDone(handler);
 			break;
 
-			case 'itemEditCancel' :
+			case 'itemEditCancel':
 				self._bindItemEditCancel(handler);
+			break;
 
 		}
 	};
