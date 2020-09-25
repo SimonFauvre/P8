@@ -172,7 +172,6 @@
 
 	View.prototype.bind = function (event, handler) {
 		var self = this;
-
 		switch(event) {
 			case 'newTodo':
 				$on(self.$newTodo, 'change', function () {
@@ -214,7 +213,6 @@
 			case 'itemEditCancel':
 				self._bindItemEditCancel(handler);
 			break;
-
 		}
 	};
 
